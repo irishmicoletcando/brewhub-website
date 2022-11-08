@@ -223,8 +223,8 @@ ul {
 
 .product1, .product2, .product3 {
   background-color: #FFFFFF;
-  width: 40vw;
-  height: 90vh;
+  width: 500px;
+  height: 675px;
   margin: 1em;
   border-radius: 10px;
   padding: 1em;
@@ -297,8 +297,8 @@ ul {
 
 .first-feedback, .second-feedback {
   background-color: #FFFFFF;
-  width: 30vw;
-  height: 60vh;
+  width: 450px;
+  height: 55vh;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 5px 5px 5px #AAAAAA;
