@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Montserrat:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+#main-container {
+  margin: auto;
+  width: 100vw;
+}
+
+/* navbar */
+#navbar {
+  height: 15vh;
+  width: 100vw;
+  padding: 0.5em 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brewhub-img {
+  width: 200px;
+  height: 50px;
+}
+
+#navigation-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navbar-menu {
+  font-weight: 600;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 3em;
+  position: relative;
+}
+
+.navbar-menu::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #BF9270;
+  transition: 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.navbar-menu:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.cart-logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 3em;
+}
+
+.cart-logo:hover {
+  cursor: pointer;
+}
+/* navbar end */
+
+/* home page start */
+#home {
+  margin: 1.75em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.coffee-time {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.coffee-time::before {
+  content: "━━━━━━━ ";
+  font-weight: bold;
+}
+
+.heading {
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  font-size: 5.5rem;
+}
+
+.brewhub-coffee-title {
+  color: #BF9270;
+}
+
+.more-info {
+  padding: 1.5em 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#order-now-btn {
+  background-color: #483535;
+  color: #FFFFFF;
+  padding: 1em 2em;
+  font-size: 1.25em;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+#order-now-btn:hover{
+  cursor: pointer;
+  background-color: #372526;
+}
+
+.brewhub-product {
+  width: 500px;
+  height: 550px;
+  transform: rotate(335deg);
+}
+/* home page end */
+
+/* about start */
+#about {
+  margin: 1.5em;
+  padding: 3em 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.coffee-beans {
+  width: 500px;
+  height: 650px;
+}
+
+.qualities-grid {
+  padding: 2em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(100px, auto);
+  row-gap: 0.5em;
+  column-gap: 1em;
+}
+
+.qualities-title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.25rem;
+  padding: 0.25em 0;
+}
+
+.brewhub-qualities-img {
+  width: 100px;
+  height: 100px;
+}
+
+.uniqueness-title {
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  font-size: 4.5rem;
+  margin-left: 0.5em;
+}
+
+.different {
+  color: #BF9270;
+}
+
+.brewhub-qualities-description {
+  font-size: 1.25rem;
+}
+/* about page end */
+
+/* shop start */
+#shop {
+  background-color: #BF9270;
+}
+
+.brewhub-products {
+  width: 400px;
+  height: 500px;
+}
+
+.shop-title {
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+.shop-title-featured-blends {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 3rem;
+  font-family: 'Lora', serif;
+  padding: 1em 0 0.75em 0;
+}
+
+.shop-title-more-info {
+  color: #FFFFFF;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 1em 2em 2.5em;
+  
+}
+
+.product1, .product2, .product3 {
+  background-color: #FFFFFF;
+  width: 40vw;
+  height: 90vh;
+  margin: 1em;
+  border-radius: 10px;
+  padding: 1em;
+  transition: transform .2s;
+}
+
+.product1:hover, .product2:hover, .product3:hover {
+  transform: scale(1.05);
+}
+
+.product-blend-title {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-bottom: 0.25em;
+}
+
+.product-description {
+  font-size: 1.25rem;
+}
+
+.sales {
+  padding-top: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+.buy-now-btn {
+  background-color: #483535;
+  color: #FFFFFF;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  border: none;
+  outline: none;
+  border-radius: 10px
+}
+
+.buy-now-btn:hover {
+  cursor: pointer;
+  background-color: #372526;
+}
+/* shop end */
+
+/* feedback start */
+#feedback {
+  margin: 5em 4em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 3em;
+}
+
+.feedback-left {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1em;
+}
+
+.person-feedback-img {
+  width: 100%;
+}
+
+.first-feedback {
+  margin-right: 1.5em;
+}
+
+.first-feedback, .second-feedback {
+  background-color: #FFFFFF;
+  width: 30vw;
+  height: 60vh;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px #AAAAAA;
+}
+
+.feedback-details {
+  padding: 0.5em 1em;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding-bottom: 0.75em;
+}
+
+.feedback-right {
+  padding: 0 2.5em;
+}
+.customers-say-title {
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  font-size: 4.5rem;
+  padding-bottom: 0.25em;
+}
+
+.customers-say {
+  color: #BF9270;
+  font-size: 5rem;
+}
+
+.customers-say-more-info {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding-bottom: 3em;
+}
+
+.arrow-img {
+  width: 20px;
+  height: 20px;
+}
+
+.left-btn, .right-btn {
+  background-color: #BF9270;
+  padding: 0.75em;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin: 0 1em 0 0;
+}
+
+.left-btn:hover, .right-btn:hover {
+  background-color: #88674e;
+}
+
+/* feedback end */
+
+/* contact start */
+#contact {
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 0 0 1.5em 0;
+  line-height: 1.75em;
+}
+
+.contact-details {
+  display: flex; 
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.privacy {
+  padding-right: 5em;
+}
+
+.contact-headings {
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding-bottom: 0.5em;
+}
+
+.contact-more-info {
+  font-weight: 500;
+}
+/* contact end */
+
+/* divider start */
+hr {
+  width: 90vw;
+  margin: auto;
+  border-top: 3px solid #000000;
+}
+/* divider end */
+
+/* footer start */
+#footer {
+  margin: 1.25em;
+  padding: 0 3em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media-icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 1em;
+  padding: 0.25em;
+}
+
+.social-media-icon:hover {
+  cursor: pointer;
+  background-color: #D9D8D8;
+  border-radius: 20px;
+}
